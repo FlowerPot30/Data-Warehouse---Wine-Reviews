@@ -43,7 +43,8 @@ BEGIN
 			TABLOCK,
 			FIELDQUOTE = '"',
 			ROWTERMINATOR = '0x0a',
-			FORMAT='CSV'
+			FORMAT='CSV',
+			CODEPAGE = '65001'
 		);
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
