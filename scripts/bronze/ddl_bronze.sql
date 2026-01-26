@@ -19,7 +19,7 @@ CREATE TABLE bronze.wine_reviews (
 	description VARCHAR(1000),
 	designation VARCHAR(255),
 	points INT,
-	price INT,
+	price VARCHAR(255),
 	province VARCHAR(255),
 	region_1 VARCHAR(255),
 	region_2 VARCHAR(255),
