@@ -16,3 +16,19 @@ Usage Notes:
 ===============================================================================
 */
 
+-- ====================================================================
+-- Checking 'silver.wine_reviews'
+-- ====================================================================
+
+SELECT *
+FROM bronze.wine_reviews;
+
+-- Check for NULLs or Duplicates in Primary Key
+-- Expectation: No Results
+SELECT 
+	reviews_id
+FROM bronze.wine_reviews
+GROUP BY reviews_id
+HAVING COUNT(*) > 1 OR reviews_id IS NULL;
+
+-- Check 
