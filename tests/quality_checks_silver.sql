@@ -20,9 +20,6 @@ Usage Notes:
 -- Checking 'silver.wine_reviews'
 -- ====================================================================
 
-SELECT *
-FROM bronze.wine_reviews;
-
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
 SELECT 
