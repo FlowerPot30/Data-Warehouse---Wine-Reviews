@@ -19,7 +19,7 @@ CREATE TABLE silver.wine_reviews (
 	description VARCHAR(1000),
 	designation VARCHAR(255),
 	points INT,
-	price VARCHAR(255),
+	price INT,,
 	province VARCHAR(255),
 	region_1 VARCHAR(255),
 	region_2 VARCHAR(255),
